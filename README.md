@@ -23,6 +23,11 @@ A boilerplate with koa@2.x App.
 
 it use nodemon to auto reload the node server
 
+### Test
+- `npm run test`
+
+it use mocha and chai to run test
+
 ### Production
 - install pm2 first `npm install pm2 -g`
 - `npm run start` it will use the pm2 to start the server

@@ -1,7 +1,7 @@
 {
-  "name": "rollcall-server",
+  "name": "koa2-boilerplate",
   "version": "0.0.1",
-  "description": "server for lu",
+  "description": "a boilerplate for koa2",
   "main": "app.js",
   "private": true,
   "dependencies": {
@@ -16,11 +16,14 @@
     "mongodb": "^2.2.14"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0"
   },
   "scripts": {
     "start": "pm2 start ecosystem.config.js --env production",
-    "dev": "nodemon --harmony_async_await app.js"
+    "dev": "nodemon --harmony_async_await app.js",
+    "test": "mocha --recursive --watch"
   },
   "author": "luxp (luxianpo@qq.com)",
   "engines": {
